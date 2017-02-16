@@ -5,6 +5,7 @@ python:
 install:
   - pip3 install pep8 
   - pip3 install --upgrade pyflakes
+  - sudo ./install-dependencies.sh
 script:
   - "pep8 src"
   - "python3 -m pyflakes src"

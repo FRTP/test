@@ -1,1 +1,1 @@
-apt-get install python3.5 make g++-5
+apt-get install python3 make g++-4.8
