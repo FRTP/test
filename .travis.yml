@@ -1,7 +1,7 @@
 sudo: required
 
 script:
-  - sudo unlink /usr/bin/gcc && sudo ln -s /usr/bin/gcc-5 /usr/bin/gcc
+  - sudo unlink /usr/bin/gcc
   - gcc --version
 addons:
   apt:
@@ -16,6 +16,8 @@ python:
 install:
   - pip3 install pep8 
   - pip3 install --upgrade pyflakes
+  - sudo ln /usr/bin/g++-5 /usr/bin/g++
+cashe: pip3
 script:
   - "pep8 src"
   - "python3 -m pyflakes src"
