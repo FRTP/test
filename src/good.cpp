@@ -5,7 +5,7 @@ int c;
 class a {
     int b(int a)
     {
-            return 25;
+            return 25 + a;
     }
 };
 
