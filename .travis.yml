@@ -1,8 +1,5 @@
 sudo: required
 
-script:
-  - sudo unlink /usr/bin/gcc
-  - gcc --version
 addons:
   apt:
     sources:
@@ -16,6 +13,7 @@ python:
 install:
   - pip3 install pep8 
   - pip3 install --upgrade pyflakes
+  - sudo unlink /usr/bin/g++
   - sudo ln /usr/bin/g++-5 /usr/bin/g++
 cashe: pip3
 script:
