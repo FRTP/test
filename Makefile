@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-c -Wall -Wextra -Werror -std=c++17
+CFLAGS=-c -Wall -Wextra -Werror -std=c++14
 LDFLAGS=
 
 SRCDIR=src
