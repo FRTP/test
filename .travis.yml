@@ -6,10 +6,11 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-5
+      - python3.5
 
 language: python
 python:
-  - "3"
+  - "3.5"
 install:
   - pip3 install pep8 
   - pip3 install --upgrade pyflakes
