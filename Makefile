@@ -1,2 +1,17 @@
+CC=g++
+CFLAGS=-c -Wall -Wextra -Werror -std=c++17
+LDFLAGS=
+
+SRCDIR=src
+BUILDDIR=build
+OBJECTDIR=objects
+
+
 all:
-	g++ src/good.cpp -o build/good
+	$(CC) $(CFLAGS) $(SRCDIR)/good.cpp -o $(BUILDDIR)/good
+
+clean:
+	rm -rf $(BUILDDIR)/*
+	rm -rf $(OBJECTDIR)/*
+	touch $(BUILDDIR)/.keep
+	touch $(OBJECTDIR)/.keep

@@ -3,7 +3,7 @@
 int c;
 
 class a {
-    int b(itn a)
+    int b(int a)
     {
             return 25;
     }
