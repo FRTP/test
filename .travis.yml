@@ -4,6 +4,7 @@ addons:
   apt:
     sources:
       - ubuntu-toolchain-r-test
+      - deadsnakes
     packages:
       - g++-5
       - python3.5
